@@ -1,0 +1,8 @@
+public A safeclone(LinkedList list) throws CloneNotFoundException{
+if(list.contains(this)) return this;
+LinkedList newList=(LinkedList)list.clone();
+newList.add(this);
+A a= (A)super.clone();
+b=b.safeclone(newlist);
+return a;
+}
